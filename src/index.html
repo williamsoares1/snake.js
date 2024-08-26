@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Cobrinha</title>
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>SNAKE.JS</header>
+      <canvas width="600px" height="600px"></canvas>
+      <span class="start-game info-game"></span>
+      <span class="over-game info-game esconder">
+        <h1>Você morreu</h1><p>Seu score final foi de <Span class="score-num">0</Span>.</p><button class="over">REINICIAR</button>
+      </span>
+      <div class="score-box"><h1>Score: <Span class="score-num">0</Span></h1></div>
+      <section>
+        <div class="up">
+          <button value="ArrowUp" class="ArrowUp MoveButton">&#8679</button>
+        </div>
+        <div class="down">
+          <button value="ArrowLeft" class="ArrowLeft MoveButton">&#8678</button>
+          <button value="ArrowDown" class="ArrowDown MoveButton">&#8681</button>
+          <button value="ArrowRight" class="ArrowRight MoveButton">&#8680</button>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="../js/script.js"></script>
+</html>

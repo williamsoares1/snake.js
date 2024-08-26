@@ -1,0 +1,106 @@
+:root {
+  --corE1: #333;
+  --corE2: #252525;
+  --corE3: #222;
+  --corE4: #555;
+  --corC1: #fff;
+  --corC2: #ddd;
+  --corC3: #acacac2f;
+  --green: rgb(54, 75, 53);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  place-content: center;
+  background-color: var(--corE1);
+}
+
+main {
+  padding: 20px;
+  background-color: var(--corE2);
+}
+
+header {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--corC1);
+  text-align: center;
+  padding: 10px 0;
+}
+
+canvas {
+  background-color: var(--corE3);
+  border: 2px solid var(--green);
+}
+
+.score-box{
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  place-content: center;
+  color: var(--corC1);
+  margin-bottom: 30px;
+}
+
+.down, .up{
+  display: flex;
+  justify-content: center;
+}
+
+.info-game{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(2, 2, 2, 0.26);
+  backdrop-filter: blur(5px);
+  color: var(--corC1);
+  position: absolute;
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+
+section button{
+  margin: 5px;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 20px;
+  background-color: var(--corE4);
+  border-radius: 4px;
+  box-shadow: 3px 3px 1px var(--corE1),
+  3px 3px 10px #00000071;
+  user-select: none;
+  border: none;
+  border-right: 2px solid var(--corC3);
+  border-bottom: 2px solid var(--corC3);
+}
+
+section button.click{
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}
+
+.info-game.esconder{
+  display: none;
+}
+
+button.over{
+  border: none;
+  background-color: var(--corE2);
+  color: var(--corC1);
+  padding: 10px;
+  font-size: 1.2rem;
+}
